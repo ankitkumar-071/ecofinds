@@ -73,11 +73,23 @@
     text-align: center;
     font-weight: bold;
   }
+ .image {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0 10px; /* space between h2 and form */
+}
+
+.image img {
+  height: 70px; /* or any size you prefer */
+  width: auto;
+}
 </style>
 </head>
 <body>
   <div class="signup-container">
     <h2>Create Account</h2>
+   <div class="image">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzgsSJpMcfXa9kc94IMKcBcreVXcvskHEwog&s" alt="website logo">
     <form id="signupForm">
       <label for="fullname">Full Name</label>
       <input type="text" id="fullname" name="fullname" placeholder="code wizard" required />
